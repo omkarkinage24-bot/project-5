@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "npm ci --prefix FINOVA-Smart-Expense-Tracker",
+  "buildCommand": "npm run build",
+  "outputDirectory": "FINOVA-Smart-Expense-Tracker/dist"
+}
