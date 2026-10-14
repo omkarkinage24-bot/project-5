@@ -1,0 +1,5 @@
+import { forwardRef, type InputHTMLAttributes, type SelectHTMLAttributes } from 'react';
+import { cn } from '../../lib/utils';
+export const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(({ className, ...props }, ref) => <input ref={ref} className={cn('h-11 w-full min-w-0 rounded-xl border border-slate-200 bg-white px-3.5 text-sm font-medium text-ink placeholder:font-normal placeholder:text-slate-400 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/10 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:placeholder:text-slate-500', className)} {...props} />);
+Input.displayName = 'Input';
+export function Select({ className, ...props }: SelectHTMLAttributes<HTMLSelectElement>) { return <select className={cn('h-11 w-full min-w-0 cursor-pointer rounded-xl border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200', className)} {...props} />; }

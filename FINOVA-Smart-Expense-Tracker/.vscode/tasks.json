@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "FINOVA: Start Dev Server", "type": "npm", "script": "dev", "isBackground": true, "problemMatcher": [], "group": { "kind": "build", "isDefault": true } },
+    { "label": "FINOVA: Production Build", "type": "npm", "script": "build", "problemMatcher": [] },
+    { "label": "FINOVA: Run Tests", "type": "npm", "script": "test", "problemMatcher": [] }
+  ]
+}
